@@ -1,26 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cron3x =&gt Home &lt=</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://rawgit.com/mrdoob/three.js/dev/build/three.min.js"></script>
+	<meta charset="utf-8">
+	<title>c3x - Home</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
+<body>
+	<style type="text/css">
+		
+	div.container {
+      	margin-top: 0;
+      	height: 100%;
+      	width: 100%;
+      	//display: flex;
+  	}
 
-<body class="index">
-    <div class="container">
-        <div class="fg">
-            <button class="mbtn" onclick="window.location.href='html/projects.html'">Projects</button>
-            <button class="mbtn" onclick="window.location.href='html/about.html'">Me</button>
-        </div>
+  	div.item{
+		margin-top: 10vh;
+  		height: 10vh;
+  		width: 50vh;
+  		border-radius: 1vh;
+  		backdrop-filter: blur(10px);
+  		cursor: url('assets/img/normal_cursor.png'), auto;
+  	}
 
-        <div class="bg" id=webgl></div>
+	div.item:hover{
+		margin-top: 10vh;
+  		height: 10vh;
+  		width: 50vh;
+  		border-radius: 1vh;
+  		backdrop-filter: blur(15px);
+  	}
+  	h1.text{
+  		font-family: 'Source Sans Pro', sans-serif;
+  		color: #ffffff;
+  		border: none;
+  		margin-top: 2vh;
+  		font-size: 25px;
+  		padding: 1px;
+  		background-image: linear-gradient(to right,#0d9142, #027d34);;
+  	}
+  	h1.text:hover{
+  		font-family: 'Source Sans Pro', sans-serif;
+  		color: #ffffff;
+  		border: none;
+  		margin-top: 2vh;
+  		font-size: 25px;
+  		padding: 1px;
+  		background-image: linear-gradient(to right,#0d9142, #2fb364);
+  	}
+
+  	html, body{
+		height: 100%;
+	}
+
+	body {
+	 	margin: 0;
+		background-image: url('assets/img/bg-blurred.png');
+		background-repeat: false;
+	}
+	</style>
+
+
+
+	<div class="container">
+		<div class="item">
+			<h1 class="text">Generators</h1>
+		</div>
+		<div class="item">
+			<h1 class="text">Downloads</h1>
+		</div>
+		<div class="item">
+			<h1 class="text">Me</h1>
+		</div>
     </div>
-    <!-- <script src="/main.js"></script>  -->
 </body>
-
 </html>
