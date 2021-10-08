@@ -17,39 +17,56 @@
       	//display: flex;
   	}
 
-  	div.item{
-		margin-top: 10vh;
-  		height: 10vh;
-  		width: 50vh;
-  		border-radius: 1vh;
-  		backdrop-filter: blur(10px);
-  		cursor: url('assets/img/normal_cursor.png'), auto;
+  	table{
+  		margin: -2vh;
+  		background-image: linear-gradient(to right bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.1));
+  		border-radius: 10px;
+  		width: 40vh;
   	}
-
-	div.item:hover{
-		margin-top: 10vh;
-  		height: 10vh;
-  		width: 50vh;
-  		border-radius: 1vh;
+  	.text{
+  		font-family: 'Source Sans Pro', sans-serif;
+  		color: #ffffff;
+  		border: none;
+  		margin-top: 2vh;
+  		margin-left: 10vh;
+  		font-size: 25px;
+  		padding: 1px;
+  		//background-image: linear-gradient(to right,#0d9142, #027d34);
+  	}
+  	.text:hover{
+	  	text-shadow:
+	    -1px -1px 0 #010,
+	    1px -1px 0 #010,
+	    -1px 1px 0 #010,
+	    1px 1px 0 #010;  
+  		font-family: 'Source Sans Pro', sans-serif;
+  		color: #2fb364;
+		border-radius: 20px;
+  		margin-top: 2vh;
+  		font-size: 25px;
+  		padding: 1px;
+  		//background-image: linear-gradient(to right,#0d9142, #2fb364);
   		backdrop-filter: blur(15px);
   	}
-  	h1.text{
-  		font-family: 'Source Sans Pro', sans-serif;
-  		color: #ffffff;
-  		border: none;
-  		margin-top: 2vh;
-  		font-size: 25px;
-  		padding: 1px;
-  		background-image: linear-gradient(to right,#0d9142, #027d34);;
+
+  	main.content{
+  		margin: 0;
+  		padding: 0;
+  		background-color: rgba(0, 0, 0, 0);
+  		display: flex;
+  		align-items: center;
+  		justify-content: left;
   	}
-  	h1.text:hover{
-  		font-family: 'Source Sans Pro', sans-serif;
-  		color: #ffffff;
-  		border: none;
-  		margin-top: 2vh;
-  		font-size: 25px;
-  		padding: 1px;
-  		background-image: linear-gradient(to right,#0d9142, #2fb364);
+
+  	.glass_bg{
+  		margin-top: 5vh;
+  		margin-left: 20vh;
+  		background-image: linear-gradient(to right bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.1));
+  		width: 70%;
+  		height: 90vh;
+  		border-radius: 10px;
+		backdrop-filter: blur(5px);
+
   	}
 
   	html, body{
@@ -58,23 +75,39 @@
 
 	body {
 	 	margin: 0;
-		background-image: url('assets/img/bg-blurred.png');
+		background-image: url('assets/img/background1.png');
 		background-repeat: false;
+		object-fit: cover;
+
 	}
 	</style>
+	<main class="content">
+		<table>
+			<tr>
+				<th></th>
+			</tr>
+			<tr>
+				<td>
+					<h1 class="text">Generators</h1>
+				</td>
+			</tr>
+			<tr>
+				<td>
+						<a><h1 class="text">Downloads</h1></a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+						<h1 class="text">Me</h1>
+					</td>
+			</tr>
+		</table>
+		<section class="glass_bg">
+			
 
 
 
-	<div class="container">
-		<div class="item">
-			<h1 class="text">Generators</h1>
-		</div>
-		<div class="item">
-			<h1 class="text">Downloads</h1>
-		</div>
-		<div class="item">
-			<h1 class="text">Me</h1>
-		</div>
-    </div>
+		</section>
+	</main>
 </body>
 </html>
