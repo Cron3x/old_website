@@ -6,23 +6,17 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<style type="text/css">
+		
+	div.container {
+      	margin-top: 0;
+      	height: 100%;
+      	width: 100%;
+      	/*display: flex;*/
+  	}
 
-	html, body{
-		height: 100%;
-	}
-
-	body {
-	 	margin: 0;
-		/*background-image: url('assets/img/background1.png'); */
-		background-color: #010;
-		background-repeat: false;
-		object-fit: cover;
-
-	}
   	table{
   		margin: -2vh;
   		background-image: linear-gradient(to right bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.1));
@@ -62,7 +56,6 @@
   		display: flex;
   		align-items: center;
   		justify-content: left;
-		z-index: 5;
   	}
 
   	.glass_bg{
@@ -72,32 +65,22 @@
   		width: 70%;
   		height: 90vh;
   		border-radius: 10px;
-		backdrop-filter: blur(2px);
+		backdrop-filter: blur(5px);
 
   	}
 
-	  iframe.ssbg{
-		position: relative;
-		left: -25%;
-		z-index: -99;
-		width: 100%;
+  	html, body{
 		height: 100%;
-		position: absolute;
-	}
-	div.github_logo{
-		margin: 10;
-  		padding: 0;
-		display: flex;
-	}
-	a.href_to_gh:link, a.href_to_gh:visited {
-		color: #1b6439;
-		text-decoration: underline;
-		cursor: default;
 	}
 
+	body {
+	 	margin: 0;
+		background-image: url('assets/img/background1.png');
+		background-repeat: false;
+		object-fit: cover;
 
+	}
 	</style>
-	<iframe src="./html/background.htm" frameborder="0" class="ssbg"></iframe>
 	<main class="content">
 		<table>
 			<tr>
@@ -110,19 +93,18 @@
 			</tr>
 			<tr>
 				<td>
-					<a><h1 class="text">Downloads</h1></a>
+						<a><h1 class="text">Downloads</h1></a>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<h1 class="text">Me</h1>
-				</td>
+						<h1 class="text">Me</h1>
+					</td>
 			</tr>
 		</table>
 		<section class="glass_bg">
-			
+
 		</section>
 	</main>
-	<div class="github_logo"><i style="font-size:48px" class="fa"><a href="https://github.com/cron3x" class="href_to_gh">&#xf09b;</a></i></div>
 </body>
 </html>
