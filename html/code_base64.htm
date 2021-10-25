@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+	  <link rel="stylesheet" href="../css/style.frames.css">
+	  <script src="../js/app.js"></script>
+</head>
+<body>
+<h1 class="sub_frame">Base64</h1>
+<br/>
+<main>
+  <select name="convert_mode" id="convert_mode" oninput="getB64Mode()">
+    <option value="none">-->Select what to do<--</option>
+    <option value="atb">Text to Base64</option>
+    <option value="bta">Base64 to Text</option>
+    <option value="itb">Imgage to Base64</option>
+    <option value="bti">Base64 to Image</option>
+  </select>
+  <br>
+  <div>
+    <input type="text" id= "input" oninput="convertB64()" cols=40 rows=5/>
+  </div>
+  <br/>
+  <div id= "out_frame">
+    <input type="text" id= "output" cols="40" rows="5" />  
+  </div>
+</main>
+</body>
+</html>
