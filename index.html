@@ -7,98 +7,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/app.js"></script>
 </head>
 <body>
-	<style type="text/css">
-
-	html, body{
-		height: 100%;
-	}
-
-	body {
-	 	margin: 0;
-		/*background-image: url('assets/img/background1.png'); */
-		background-color: #010;
-		background-repeat: false;
-		object-fit: cover;
-
-	}
-  	table{
-  		margin: -2vh;
-  		background-image: linear-gradient(to right bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.1));
-  		border-radius: 10px;
-  		width: 40vh;
-  	}
-  	.text{
-  		font-family: 'Source Sans Pro', sans-serif;
-  		color: #ffffff;
-  		border: none;
-  		margin-top: 2vh;
-  		margin-left: 10vh;
-  		font-size: 25px;
-  		padding: 1px;
-  		/* background-image: linear-gradient(to right,#0d9142, #027d34); */
-  	}
-  	.text:hover{
-	  	text-shadow:
-	    -1px -1px 0 #010,
-	    1px -1px 0 #010,
-	    -1px 1px 0 #010,
-	    1px 1px 0 #010;  
-  		font-family: 'Source Sans Pro', sans-serif;
-  		color: #2fb364;
-		border-radius: 20px;
-  		margin-top: 2vh;
-  		font-size: 25px;
-  		padding: 1px;
-  		/* background-image: linear-gradient(to right,#0d9142, #2fb364); */
-  		backdrop-filter: blur(15px);
-  	}
-
-  	main.content{
-  		margin: 0;
-  		padding: 0;
-  		background-color: rgba(0, 0, 0, 0);
-  		display: flex;
-  		align-items: center;
-  		justify-content: left;
-		z-index: 5;
-  	}
-
-  	.glass_bg{
-  		margin-top: 5vh;
-  		margin-left: 20vh;
-  		background-image: linear-gradient(to right bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.1));
-  		width: 70%;
-  		height: 90vh;
-  		border-radius: 10px;
-		backdrop-filter: blur(2px);
-
-  	}
-
-	  iframe.ssbg{
-		position: relative;
-		left: -25%;
-		z-index: -99;
-		width: 100%;
-		height: 100%;
-		position: absolute;
-	}
-	div.github_logo{
-		margin: 10;
-  		padding: 0;
-		display: flex;
-	}
-	a.href_to_gh:link, a.href_to_gh:visited {
-		color: #1b6439;
-		color: #ffff66;
-		text-decoration: underline;
-		cursor: default;
-	}
-
-
-	</style>
-	<iframe src="./html/background.htm" frameborder="0" class="ssbg"></iframe>
+	<iframe src="./background.htm" frameborder="0" class="ssbg"></iframe>
 	<main class="content">
 		<table>
 			<tr>
@@ -106,7 +19,7 @@
 			</tr>
 			<tr>
 				<td>
-					<h1 class="text">Generators</h1>
+					<h1 class="text"><a onclick="setContent('./html/code_base64.htm')">Generators</a></h1>
 				</td>
 			</tr>
 			<tr>
@@ -121,7 +34,7 @@
 			</tr>
 		</table>
 		<section class="glass_bg">
-			
+			<iframe src="./html/about_me.htm" frameborder="0" id="contentFrame" class="site_content"></iframe>
 		</section>
 	</main>
 	<div class="github_logo"><i style="font-size:40px" class="fa"><a href="https://github.com/cron3x" class="href_to_gh">&#xf09b;</a></i></div>
