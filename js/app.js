@@ -11,6 +11,9 @@ function getB64Mode(){
 
     console.log(out_frame.children);
 
+    out.value = "";
+    inp.value = "";
+
     if(conv_mode != "bti"){
         let inp_box = document.createElement("input");
         inp_box.setAttribute('id', 'output')
